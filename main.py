@@ -37,6 +37,7 @@ response4 = requests.post(url4, headers=headers)
 json_data4 = json.loads(response4.text)
 phonetg = json_data4['item']['telegram_phone']
 print("Значение phone telegram:", phonetg)
+# скачайте селениум и сюда путь
 s = Service(executable_path='J:\programming\geckodriver-v0.33.0-win64\geckodriver.exe')
 driver = webdriver.Firefox(service=s)
 try:
