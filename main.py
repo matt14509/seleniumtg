@@ -27,10 +27,6 @@ item_idtg = json_data3['items'][0]['item_id']
 pricetg = json_data3['items'][0]['price']
 print("Ид на маркете telegram:", item_idtg)
 print("Цена на маркете telegram:", pricetg)
-# вк
-# ДЛЯ ПЕРЕПРОДАЖИ И БРУТА : https://api.lzt.market/vkontakte?tel=yes&tfa=no&token_auth_only=no&opened_profile=true&pmin=0&pmax=23&origin[]=brute&origin[]=resale&sb_by_me=false&nsb_by_me=true&order_by=price_to_up
-# ДЛЯ ВСЕГО : https://api.lzt.market/vkontakte?tel=yes&tfa=no&token_auth_only=no&pmin=0&pmax=13&auction=no&sb_by_me=false&nsb_by_me=true
-# ДЛЯ БРУТА: https://api.lzt.market/vkontakte?tel=yes&tfa=no&token_auth_only=no&opened_profile=true&auction=no&origin[]=brute&sb_by_me=false&nsb_by_me=true&order_by=price_to_up
 
 url4 = f"https://api.lzt.market/{item_idtg}/fast-buy?price={pricetg}"
 response4 = requests.post(url4, headers=headers)
